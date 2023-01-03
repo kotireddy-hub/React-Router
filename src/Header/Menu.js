@@ -16,6 +16,7 @@ class Menu extends React.Component {
                     <li className="ui_li"><a href="#/about">About</a></li>
                     <li className="ui_li"><NavLink to="service">Service</NavLink></li>
                     <li className="ui_li"><Link to="contact">Contact</Link></li>
+                    <li className="ui_li"><Link to="contact">Products</Link></li>
                 </ul>
                 <Routes>
                     <Route path="/" exact element={<Home />} />
