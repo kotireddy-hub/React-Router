@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function Home(){
+function Home() {
+    let navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/contact");
+    }
+
     return <div>
-        This is Home page
+        <button type="button" onClick={handleClick}>
+           Contact
+        </button>
     </div>
 };
 
